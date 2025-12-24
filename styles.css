@@ -1,0 +1,89 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #1f2937;
+    color: white;
+    margin: 10px 150px;
+}
+
+.container-section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    max-width: 800px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;   /* keeps it from getting huge */
+  height: auto;       /* keeps aspect ratio */
+  object-fit: contain;
+  flex-shrink: 1;     /* allow it to shrink if needed */
+}
+
+.intro {
+    margin: 20px 0;
+    flex: 1 1 320px;
+    min-width: 0;
+}
+
+.container-section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    flex-direction: row;
+    line-height: 1.2;
+    gap: 2rem;              /* add breathing room */
+    flex-wrap: wrap;         /* KEY: allow items to move to next line */
+    flex: 0 1 600px;         /* prefers 600px, but is allowed to shrink */
+    max-width: 100%;         /* never exceed container width */
+    height: auto;
+    object-fit: cover;       /* crop if needed */
+}
+
+.hero {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
