@@ -41,23 +41,19 @@ img {
     height: auto;
 }
 
-.intro {
-    flex: 1 1 auto;        /* allow text side to shrink */
-    min-width: 0;          /* IMPORTANT: allows clipping inside flex */
-    overflow: hidden;      /* clip text if needed */
-}
-
 .container-section2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    flex-wrap: nowrap;     /* FORCE one row */
-    overflow: hidden;      /* CLIP anything that doesn't fit */
     gap: 2rem;             /* optional spacing */
     line-height: 1.2;
     padding: 20px 0px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
@@ -79,6 +75,8 @@ button {
     font-size: 18px;
     cursor: pointer;
     border-radius: 8px;
+    width: 8rem;
+    height: auto;
 }
 
 footer {
