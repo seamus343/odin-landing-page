@@ -3,14 +3,16 @@ body {
     line-height: 1.6;
     background-color: #1f2937;
     color: white;
-    margin: 10px 150px;
+    margin: 0;
 }
 
 .container-section1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 .header {
@@ -45,10 +47,12 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     gap: 2rem;             /* optional spacing */
     line-height: 1.2;
-    padding: 20px 0px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 .intro {
@@ -80,23 +84,28 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .container-section3 {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 .random {
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 20px;
-
-    /* display: flex; */
 }
 
 .boxes-info {
     display: flex;
     gap: 1rem;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
 .box-container1,
@@ -106,6 +115,7 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 0 1 280px; /* don't grow, can shrink, base width 280px */
 }
 
 .description {
@@ -125,12 +135,18 @@ a:link, a:visited, a:hover, a:active {
     width: 280px;
     height: 280px;
     border-radius: 8px;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
 }
 
 .container-section4 {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 .inspiring {
@@ -145,12 +161,15 @@ a:link, a:visited, a:hover, a:active {
     text-align: right;
 }
 
-.cta {
+.container-section5 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 40px;
     justify-content: space-between;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 .cta-heading {
